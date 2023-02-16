@@ -7,7 +7,7 @@ const dir = new Directory();
 
 let interface = readline.createInterface(process.stdin,process.stdout)
 
-const tool = `Comandos :q = salir, :sa = guardar como, :s = guardar----------------------`;
+const tools= `Comandos :q = salir, :sa = guardar como, :s = guardar----------------------`;
 
 const pantalla = `
             =================
@@ -44,10 +44,12 @@ function mainScreen(){
     })
 }
 
-function createFile(){
+function createFile(){ 
+    let file = new Document(dir.getPath());
 
 }
 
 function openFileInterface(){
 
 }
+
