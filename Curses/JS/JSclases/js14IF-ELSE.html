@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS IF - ELSE</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="numIn">
+                </td>
+                <td><input type="button" onclick="valor(this.form)" size="15px" value="Click"></td>
+                <p id="demo">HI</p>
+                <td>
+                    <input type="text" name="numOut">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript">
+        function valor(form){
+            if (form.numIn.value>0 && form.numIn.value<49){
+                form.numOut.value=0;  
+                document.getElementById("demo").innerHTML="El número está entre 0 y 49";
+            }else{
+                form.numOut.value=1;
+                document.getElementById("demo").innerHTML="El número es mayor";
+            }
+        }
+
+    </script>
+</body>
+</html>

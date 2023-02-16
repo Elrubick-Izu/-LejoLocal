@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="lines"></p>
+    <p id="len"></p>
+    <script>
+        var studentOne = "John Smith";
+        var studentTwo = "Roy Martin";
+        document.getElementById("demo").innerHTML=studentOne + "<br>" + studentTwo;
+
+        var line1 ="It´s going to rain";
+        var line2 = "He is colled 'Xavier'";
+        var line3 ='He is called "Xavier"';
+        var line4 ="He is the best \"player\"in the world"
+        document.getElementById("lines").innerHTML=line1 + "<br>" + line2 + "<br>" + line3 + "<br>" + line4;
+
+        //String lenght
+        var txt = "ABCDEFGHACIALF"
+        document.getElementById("len").innerHTML=txt.length;
+    </script>
+</body>
+</html>

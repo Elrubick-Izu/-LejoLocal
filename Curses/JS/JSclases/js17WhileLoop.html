@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS17 While Loop</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <form>
+        <table>
+            <tr>
+                <input type="text" name="numIn" size="15px">
+                <input type="button" onclick="valor(this.form)" value="Click Here">
+            </tr>
+            
+        </table>
+        
+    </form>
+    
+    <script type="text/javascript">
+        function valor(form){
+        do{
+            form.numIn.value++;
+            document.write(form.numIn.value + "<br>")
+        }while(form.numIn.value<10);
+        document.getElementById("demo").innerHTML=form.numIn.value;
+        }
+    </script>
+</body>
+</html>

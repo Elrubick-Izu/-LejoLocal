@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <menu>
+            <table>
+                <b>Proyecto 02 Javascript</b>
+            </table>
+        </menu>
+    </header>
+
+    <style>
+        body{
+            padding: 0px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 2px;
+            color: white;
+            background-color: black;
+        }
+        header{
+            display: flex;
+            text-align: center;
+            flex-direction: row;
+            width: 100%;
+            height: 150px;
+            padding-left: 300px;
+        }
+        img{
+            width: 150px;
+            height: 120px;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: row;
+            padding-left: 250px;
+            border: 1px solid white;
+        }
+
+        .wrap #img1:hover{
+            border: 2px solid aquamarine;
+        }
+
+        .carrusel{
+            display: flex;
+            position: relative;
+            padding-left: 150px;
+            height: 200px;
+            border: 1px dashed red;
+        }
+        #demo1{
+            border-radius: 5px;
+            padding: 50px;
+            font-size: 60px;
+        }
+        #demo2{
+            border-radius: 5px;
+            padding: 50px;
+            font-size: 60px;
+        }
+        #demo3{
+            border-radius: 5px;
+            padding: 50px;
+            font-size: 60px;
+        }
+        
+    </style>
+
+    <form>
+            <!--Botones-->
+        <table class="wrap">
+            <tr >
+                <td><input type="button" value="       " size="125px" name="m1" id="demo1" style="background: url('img/img1.jpg');"
+                    onmouseover="selectImg(this.form)" onmouseleave="selectImgOut(this.form)"></td>                
+                <td><input type="button" value="       " size="125px" name="m2" id="demo2" style="background: url('img/img2.jpg');"
+                    onmouseover="selectImg(this.form)" onmouseleave="selectImgOut(this.form)"></td>  
+                <td><input type="button" value="       " size="125px" id="demo3" style="background: url('img/img3.jfif');"
+                    onmouseover="selectImg(this.form)" onmouseleave="selectImgOut(this.form)"></td>  
+
+                <!--<input type="button" size="15px" value="Click" 
+                onmouseover="selectImg(this.form)" onmouseleave="selectImgOut(this.form)"> -->
+            </tr>           
+            
+        </table>
+            <!--IMAGENES-->
+        <table class="wrap">
+            <tr>
+                <td><img src="img/img1.jpg" id="img1" title="minita1"></td>                
+                <td><img src="img/img2.jpg" id="img1" title="minita2"></td>
+                <td><img src="img/img3.jfif" id="img1" title="minita3"></td>
+                <td><img src="img/img4.png" id="img1" title="minita4"></td>
+                <td><img src="img/img5.png" id="img1" title="minita5" ></td>
+
+                <!--<input type="button" size="15px" value="Click" 
+                onmouseover="selectImg(this.form)" onmouseleave="selectImgOut(this.form)"> -->
+            </tr>           
+            
+        </table>
+        <br>
+        <p class="carrusel">
+            <input type="text" name="fondo" size="150px">
+        </p>
+
+    </form>
+
+    <script type="text/javascript">
+        var imgs=["background: url('img/img1.jpg')","background: url('img/img2.jpg')",
+        "background: url('img/img3.jfif')","background: url('img/img4.png')","background: url('img/img5.png')"];
+        var positiones=["document.getElementById('demo1').innerHTML","document.getElementById('demo2').innerHTML",
+        "document.getElementById('demo3').innerHTML"];
+        function selectImg(form){
+            switch(positiones){
+                case 0:
+                    form.fondo.style=imgs[x];
+                break;
+                case 1:
+                    form.fondo.style=imgs[x];
+                break;
+                case 2:
+                    form.fondo.style=imgs[x];
+                break;
+                case 3:
+                    form.fondo.style=imgs[x];
+                break;
+                case 4:
+                    form.fondo.style=imgs[x];
+                break;
+            }
+
+        }
+
+        function selectImgOut(form){
+            form.fondo.style="background-color: white"
+        }
+
+    </script>
+</body>
+</html>

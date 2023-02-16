@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        .body{
+            background-color: antiquewhite;
+        }
+    </style>
+    <form>
+       <input type="button" value="Click" onclick="randomColor(this.form)" style="background-color: blueviolet; display: flex; position: relative; left: 50%;"> 
+        <p id="demo" style="background-color: orange; border: solid black 1px;">Lorem ipsum, dol
+            or sit amet consectetur adipisicing elit. Consectetur porro deserunt aliquam, harum non s
+            aepe blanditiis sequi quisquam, ex inventore illo perferendis 
+            voluptas. Tempore nisi quidem repellat sequi quos iste.</p>
+    </form>
+
+    <script type="text/javascript">
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+        
+        // PARA FORM
+        
+        function randomColor(form){
+            var ran=["background-color: aqua;","background-color: yellow;","background-color: orange;","background-color: blue;"];
+            var x=getRandomInt(2);     
+            form.style=ran[x];
+        }
+
+        // PARA BODY
+        /*
+        function randomColor(body){
+   
+            body.style=ran[x];
+        }*/
+            
+    </script>
+</body>
+</html>

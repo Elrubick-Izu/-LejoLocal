@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 20 EVENTOS</title>
+</head>
+<body>
+    <form>
+        
+        <input type="button" onmouseover="dia(this.form)" onmouseleave="clean(this.form)" value="Click Here">        
+        <input type="text" name="date" size="15px">
+    </form>
+
+    <!---->
+    <input type="button" onclick="changeText(this)" value="Prueba">
+    <br>
+    
+    <button id="demo" onclick="changeText2()" value="Prueba">Hola</button>
+
+
+    <form>
+        <input  type="button" value="Click"  onclick="texting(textOut)">
+        <input type="text" name="textOut" size="12px">
+    </form>
+
+    <script type="text/javascript">
+        //FORM
+    function dia(form){
+        form.date.value=Date();
+    }
+    function clean(form){
+        form.date.value =" ";
+    }
+        //Button
+    function changeText(button){
+        button.value="Funciona";
+    }
+        //OR
+    function changeText2(){
+        document.getElementById("demo").innerHTML="Funciona";
+    }
+        //text
+    function texting(texto){
+        texto.value="Listo";
+    }
+    </script>
+</body>
+</html>

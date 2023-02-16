@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>   
+
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <script >
+        var fruits =["Apple","Graves","Pear","Grape"];
+        document.getElementById("demo").innerHTML=fruits[0];
+
+        //Tipos de salida de un Array
+        document.getElementById("demo2").innerHTML=fruits[2].toString();
+        document.getElementById("demo2").innerHTML=fruits.toString();
+        document.getElementById("demo3").innerHTML=fruits.join(" - ");
+        //El metodo pop elimina el úlimo elemento del array "Grape"
+        document.getElementById("demo4").innerHTML=fruits.pop();
+        document.getElementById("demo4").innerHTML=fruits;
+        //El metodo shift elimina el primer elemento del array "Appel"
+        document.getElementById("demo4").innerHTML=fruits.shift();        
+        document.getElementById("demo4").innerHTML=fruits;
+        //El metodo push agrega el ultimo elemento al array "Orange"
+        //El metodo unshift agrega el primer elemento al array "Orange"
+        document.getElementById("demo4").innerHTML=fruits.unshift("Orange");        
+        document.getElementById("demo4").innerHTML=fruits;
+    </script>
+    
+    <h1>Hi</h1>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+        }
+        header{
+            margin-top: 15px;
+        }
+        .tumbler{
+            display: flex;
+            flex-direction: row;
+            padding-left: 150px;
+            
+        }
+        .tumbler img{
+            padding-left: 10px;
+            border: 1px solid grey;
+            height: 120px;
+            width: 160px;
+        }
+
+        .tumbler img:hover{
+            border: 2px solid aqua;
+        }
+
+        .preview img{
+            border: 4px solid #444;
+            padding: 1px;
+            width: 800px;
+            height: 500px;
+        }
+
+        #demo{
+            border: 3px double white;
+        }
+    </style>
+    <div class="continer" align="center">
+        <header class="wrap">
+            <h1>Pronecto 02 JS Corrección</h1>
+        </header>
+        <div class="tumbler">
+            <img src="img/img1.jpg" name="img1" onmouseover="preview.src=img1.src" >
+            <img src="img/img2.jpg" name="img2" id="demo" onmouseover="preview.src=img2.src" >
+            <img src="img/img3.jfif" name="img3" onmouseover="preview.src=img3.src" >
+            <img src="img/img4.png" name="img4" onmouseover="preview.src=img4.src" >
+            <img src="img/img5.png" name="img5" onmouseover="preview.src=img5.src" >
+        </div>
+
+        <div class="preview" align="center">
+            <img src="img/img1.jpg" name="preview">
+        </div>
+    </div>
+</body>
+</html>

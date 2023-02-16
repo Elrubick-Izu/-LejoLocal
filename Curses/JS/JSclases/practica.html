@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica JS</title>
+</head>
+<body>
+    <style>
+        body{
+            width: 70%;
+            padding-left: 80px;
+            border: 0px;
+            background-color: black;
+            
+        }
+        #container{
+            width: 100%;
+            display: flex;
+            padding-left: 180px;
+            background-color: beige;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            padding-left: 400px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: 50px;
+
+        }
+
+        .thunstemp{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+        }
+
+        .thunstemp img{
+
+            width: 160px;
+            height: 120px;
+            
+        }
+        .thunstemp img:hover{
+            transform: scale(1.1);
+            border: 2px solid aqua;
+        }
+        .preview img{
+            width: 600px;
+            height: 400px;
+            display: block;
+            margin-left: 180px;
+            margin-bottom: 50px;
+            border: 1px double black;
+
+        }
+    </style>
+    <div id="container">
+        <div>
+            <table class="thunstemp">
+                <tr>
+                    <header>
+                        PRACTICA JS - Gabriel Izurieta
+                    </header>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/img1.jpg" name="img1" onmouseover="preview.src=img1.src">
+                    </td>
+                    <td>
+                        <img src="img/img2.jpg" name="img2" onmouseover="preview.src=img2.src">
+                    </td>
+                    <td>
+                        <img src="img/img3.jfif" name="img3" onmouseover="preview.src=img3.src">
+                    </td>
+                    <td>
+                        <img src="img/img4.png" name="img4" onmouseover="preview.src=img4.src">
+                    </td>
+                    <td>
+                        <img src="img/img5.png" name="img5" onmouseover="preview.src=img4.src">
+                    </td>
+                </tr>
+            </table>
+            <div class="preview">
+                <img src="img/img1.jpg" name="preview">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

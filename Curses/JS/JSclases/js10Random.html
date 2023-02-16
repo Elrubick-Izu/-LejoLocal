@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Random</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demoTwo"></p>
+    <p id="demoThree"></p>
+    <script>
+        var number=Math.random();
+        document.getElementById("demo").innerHTML=number;
+        
+        //demo2
+        document.getElementById("demoTwo").innerHTML=Math.min(100,50,10,5,2,1);
+
+        //demo3
+        //round-> .5 para arriba floor->BOT document.getElementById("demoThree").innerHTML=Math.round(15.4);
+        document.getElementById("demoThree").innerHTML=Math.floor(15.6);
+    </script> 
+
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            size: 15px;
+        }
+    </style>
+</body>
+</html>

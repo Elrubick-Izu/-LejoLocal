@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 12 Create And Delete Elements</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <P id="demo3"></P>
+    <script>
+        var fruits=["apple","orange","watermellon","mango"];
+        //En caso de querer cambiar el primer elemento
+        fruits[0]="kiwi";
+        //Para eliminar de un array
+        delete fruits[3];
+        fruits[3]="strawberries";    
+            //MÉTODO SPLICE 
+            fruits.splice(2,0,"banana","graves");
+
+        document.getElementById("demo").innerHTML=fruits.join(" - ");
+            //Método SORT
+            fruits.sort()
+        document.getElementById("demo2").innerHTML="<b>Sort method: </b>"+fruits.join(" - ");
+            //Método reverse
+            fruits.reverse()
+        document.getElementById("demo3").innerHTML="<b>Reverse method: </b>" + fruits.join(" - ");
+
+    </script>   
+</body>
+</html>
