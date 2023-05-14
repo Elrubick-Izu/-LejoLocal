@@ -1,0 +1,19 @@
+En SRC CREAMOS LAS CARPETAS QUE VAMOS A MODIFICAR
+
+En los componentes importamos 'react'
+
+//Estructura de componentes
+    function nombre (){
+        return(
+            //Codigo html
+        )
+    }
+Borramos todo lo de App.css
+
+Borramos de App.js todo dentro del div App
+
+Para importar el componente colocamos en la libreria import Testimonio from 'ubicacion del componenete'
+Para importar el componente colocamos <NombreDelComponente />
+Para exportar 1 componente colocamos "export defautl NombreDelComponente;"
+
+Para comentar en react usamos {/**/}
