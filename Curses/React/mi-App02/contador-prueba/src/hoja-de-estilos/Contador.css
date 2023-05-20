@@ -1,0 +1,11 @@
+.contador{
+    min-width: 300px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 14px solid white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    min-height: 230px;
+    font-size: 200px;
+}
